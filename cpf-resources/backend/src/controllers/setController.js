@@ -63,21 +63,15 @@ export const createSet = async (req, res) => {
       bevel,
       plasticTile,
       generalCommercial,
-      plankSpecifications: {
-        plankWidth,
-        plankLength,
-        thickness,
-      },
-      palletSpecifications: {
-        boxesPerPallet,
-        palletSqft,
-        palletWeight,
-      },
-      boxSpecifications: {
-        planksPerBox,
-        sqftPerBox,
-        boxWeight,
-      },
+      plankWidth,
+      plankLength,
+      thickness,
+      boxesPerPallet,
+      palletSqft,
+      palletWeight,
+      planksPerBox,
+      sqftPerBox,
+      boxWeight,
     });
 
     const savedSet = await newSet.save();
@@ -126,21 +120,15 @@ export const updateSet = async (req, res) => {
         bevel,
         plasticTile,
         generalCommercial,
-        plankSpecifications: {
-          plankWidth,
-          plankLength,
-          thickness,
-        },
-        palletSpecifications: {
-          boxesPerPallet,
-          palletSqft,
-          palletWeight,
-        },
-        boxSpecifications: {
-          planksPerBox,
-          sqftPerBox,
-          boxWeight,
-        },
+        plankWidth,
+        plankLength,
+        thickness,
+        boxesPerPallet,
+        palletSqft,
+        palletWeight,
+        planksPerBox,
+        sqftPerBox,
+        boxWeight,
       },
       { new: true }
     );

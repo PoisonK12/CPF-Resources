@@ -9,7 +9,8 @@ const floorSchema = new Schema({
     myCollection: {
         type: ObjectId,
         ref: "Set"
-    }
+    },
+    forSale: Boolean
 });
 
 const Floor = mongoose.model("Floor", floorSchema);
